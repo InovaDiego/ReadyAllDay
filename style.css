@@ -1,0 +1,73 @@
+    body{
+        font-family: 'Poppins', sans-serif;
+        background: #f7f3fb;
+        margin:0;
+        padding:40px;
+        color:#333;
+    }
+
+    h1{
+        text-align:center;
+        margin-bottom:40px;
+        font-size:40px;
+        color:#b48ed8;
+        font-weight:700;
+    }
+
+    .catalogo{
+        display:grid;
+        grid-template-columns:repeat(auto-fit, minmax(330px, 1fr));
+        gap:30px;
+        padding:20px;
+    }
+
+    .card{
+        background:white;
+        border-radius:25px;
+        padding:25px;
+        box-shadow:0 8px 20px rgba(0,0,0,0.08);
+        transition:transform 0.4s ease, box-shadow 0.4s ease;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .card:hover{
+        transform:translateY(-10px) scale(1.03);
+        box-shadow:0 14px 30px rgba(0,0,0,0.15);
+    }
+
+    .card img{
+        width:100%;
+        border-radius:20px;
+        margin-bottom:15px;
+        animation:float 4s ease-in-out infinite;
+    }
+
+    @keyframes float{
+        0%{ transform:translateY(0px); }
+        50%{ transform:translateY(-8px); }
+        100%{ transform:translateY(0px); }
+    }
+
+    .title{
+        font-size:22px;
+        font-weight:600;
+        color:#8d5ec4;
+        margin-bottom:10px;
+    }
+
+    .text{
+        font-size:14px;
+        line-height:1.5;
+        margin-bottom:6px;
+    }
+
+    .tag{
+        display:inline-block;
+        background:#e8d9fb;
+        color:#5f3f8f;
+        padding:4px 10px;
+        border-radius:10px;
+        font-size:12px;
+        margin-bottom:12px;
+    }
