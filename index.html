@@ -3,116 +3,149 @@
 <head>
 <meta charset="UTF-8">
 <title>Catálogo de Maquillaje – Clase Trabajadora</title>
-  <link rel="stylesheet" href="style.css"> 
+
+<!-- BOOTSTRAP -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+<!-- TIPOGRAFÍA -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- TU CSS -->
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Catálogo de Maquillaje Premium – Para la Clase Trabajadora</h1>
+<h1 class="text-center mb-5">Catálogo de Maquillaje Premium – Para la Clase Trabajadora</h1>
 
-<div class="catalogo">
+<!-- INICIO DEL CATÁLOGO -->
+<div class="container">
+    <div class="row g-4"> <!-- g-4 da espacio entre tarjetas -->
 
-    <!-- 1 -->
-    <div class="card">
-        <img src="imagen1.jpg">
-        <div class="title">1. Polvo Compacto “Trabajo Todo el Día”</div>
-        <div class="tag">Control de brillo 10–12 h</div>
-        <div class="text"><b>Qué es:</b> Polvo compacto matificante de alta duración.</div>
-        <div class="text"><b>Para quién:</b> Personas con turnos largos o calor.</div>
-        <div class="text"><b>Beneficio:</b> No requiere retoques constantes.</div>
-        <div class="text"><b>3D:</b> Textura del polvo + animación abriendo/cerrando.</div>
+        <!-- 1 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen1.jpg" class="img-fluid">
+                <div class="title">1. Polvo Compacto “Trabajo Todo el Día”</div>
+                <span class="tag">Control de brillo 10–12 h</span>
+                <div class="text"><b>Qué es:</b> Polvo compacto matificante de alta duración.</div>
+                <div class="text"><b>Para quién:</b> Personas con turnos largos o calor.</div>
+                <div class="text"><b>Beneficio:</b> No requiere retoques constantes.</div>
+                <div class="text"><b>3D:</b> Textura del polvo + animación abriendo/cerrando.</div>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen2.jpg" class="img-fluid">
+                <div class="title">2. Base en Barra con Protector Solar (FPS 30)</div>
+                <span class="tag">FPS 30</span>
+                <div class="text"><b>Qué es:</b> Base sólida con protector solar.</div>
+                <div class="text"><b>Beneficio:</b> Ahorra tiempo y espacio.</div>
+                <div class="text"><b>3D:</b> Mecanismo deslizable + tonos.</div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen3.jpg" class="img-fluid">
+                <div class="title">3. Tinte Multifuncional (Labial + Rubor + Sombras)</div>
+                <span class="tag">3 en 1</span>
+                <div class="text"><b>Qué es:</b> Producto en crema todo en uno.</div>
+                <div class="text"><b>Beneficio:</b> Ideal para retoques exprés.</div>
+                <div class="text"><b>3D:</b> Textura cremosa + aplicación en rostro.</div>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen4.jpg" class="img-fluid">
+                <div class="title">4. Paleta Compacta “Oficina a Día Pesado”</div>
+                <span class="tag">4 productos en 1</span>
+                <div class="text"><b>Qué es:</b> Rubor, iluminador, sombra y corrector.</div>
+                <div class="text"><b>Beneficio:</b> Look completo en un compacto.</div>
+                <div class="text"><b>3D:</b> Animación mostrando compartimentos.</div>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen5.jpg" class="img-fluid">
+                <div class="title">5. Mini Kit “Turno Nocturno”</div>
+                <span class="tag">Mini tamaño</span>
+                <div class="text"><b>Incluye:</b> Polvo anti-brillo, bálsamo y mini delineador.</div>
+                <div class="text"><b>Beneficio:</b> Apariencia fresca bajo luz artificial.</div>
+                <div class="text"><b>3D:</b> Caja + vista de cada mini producto.</div>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen6.jpg" class="img-fluid">
+                <div class="title">6. Base Compacta “Clima Extremo”</div>
+                <span class="tag">Resistente al calor</span>
+                <div class="text"><b>Qué es:</b> Base polvo-crema resistente al sudor.</div>
+                <div class="text"><b>Beneficio:</b> No se derrite en clima fuerte.</div>
+                <div class="text"><b>3D:</b> Estuche robusto + prueba de calor.</div>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen7.jpg" class="img-fluid">
+                <div class="title">7. Corrector Duo Compacto</div>
+                <span class="tag">2 tonos</span>
+                <div class="text"><b>Qué es:</b> Corrector de ojeras + manchas.</div>
+                <div class="text"><b>Beneficio:</b> Mezcla tonos según necesidad.</div>
+                <div class="text"><b>3D:</b> Doble compartimento + comparación.</div>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="imagen8.jpg" class="img-fluid">
+                <div class="title">8. Polvo Compacto con Tonos Mexicanos</div>
+                <span class="tag">Tonos reales</span>
+                <div class="text"><b>Qué es:</b> Polvo para subtonos amarillos/olivo.</div>
+                <div class="text"><b>Beneficio:</b> Se funde con piel latina.</div>
+                <div class="text"><b>3D:</b> Rueda de tonos + aplicación 3D.</div>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="IMAGENES/kit_trans_public.jpg" class="img-fluid">
+                <div class="title">9. Mini Kit “Transporte Público”</div>
+                <span class="tag">Ultra portátil</span>
+                <div class="text"><b>Incluye:</b> mini polvo, bálsamo y toallita.</div>
+                <div class="text"><b>Beneficio:</b> Uso en menos de 2 minutos.</div>
+                <div class="text"><b>3D:</b> Animación de apertura + detalles.</div>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="col-12 col-sm-6 col-lg-4">
+            <div class="card">
+                <img src="IMAGENES/iluminador.jpg" class="img-fluid">
+                <div class="title">10. Compacto “Todo en Uno Profesional”</div>
+                <span class="tag">Base + polvo + luz</span>
+                <div class="text"><b>Qué es:</b> Polvo-crema híbrido para acabado pro.</div>
+                <div class="text"><b>Beneficio:</b> Rutina completa en un solo paso.</div>
+                <div class="text"><b>3D:</b> Cambio de cobertura en tiempo real.</div>
+            </div>
+        </div>
+
     </div>
-
-    <!-- 2 -->
-    <div class="card">
-        <img src="imagen2.jpg">
-        <div class="title">2. Base en Barra con Protector Solar (FPS 30)</div>
-        <div class="tag">FPS 30</div>
-        <div class="text"><b>Qué es:</b> Base sólida con protector solar.</div>
-        <div class="text"><b>Beneficio:</b> Ahorra tiempo y espacio.</div>
-        <div class="text"><b>3D:</b> Mecanismo deslizable + tonos.</div>
-    </div>
-
-    <!-- 3 -->
-    <div class="card">
-        <img src="imagen3.jpg">
-        <div class="title">3. Tinte Multifuncional (Labial + Rubor + Sombras)</div>
-        <div class="tag">3 en 1</div>
-        <div class="text"><b>Qué es:</b> Producto en crema todo en uno.</div>
-        <div class="text"><b>Beneficio:</b> Ideal para retoques exprés.</div>
-        <div class="text"><b>3D:</b> Textura cremosa + aplicación en rostro.</div>
-    </div>
-
-    <!-- 4 -->
-    <div class="card">
-        <img src="imagen4.jpg">
-        <div class="title">4. Paleta Compacta “Oficina a Día Pesado”</div>
-        <div class="tag">4 productos en 1</div>
-        <div class="text"><b>Qué es:</b> Rubor, iluminador, sombra y corrector.</div>
-        <div class="text"><b>Beneficio:</b> Look completo en un compacto.</div>
-        <div class="text"><b>3D:</b> Animación mostrando compartimentos.</div>
-    </div>
-
-    <!-- 5 -->
-    <div class="card">
-        <img src="imagen5.jpg">
-        <div class="title">5. Mini Kit “Turno Nocturno”</div>
-        <div class="tag">Mini tamaño</div>
-        <div class="text"><b>Incluye:</b> Polvo anti-brillo, bálsamo y mini delineador.</div>
-        <div class="text"><b>Beneficio:</b> Apariencia fresca bajo luz artificial.</div>
-        <div class="text"><b>3D:</b> Caja + vista de cada mini producto.</div>
-    </div>
-
-    <!-- 6 -->
-    <div class="card">
-        <img src="imagen6.jpg">
-        <div class="title">6. Base Compacta “Clima Extremo”</div>
-        <div class="tag">Resistente al calor</div>
-        <div class="text"><b>Qué es:</b> Base polvo-crema resistente al sudor.</div>
-        <div class="text"><b>Beneficio:</b> No se derrite en clima fuerte.</div>
-        <div class="text"><b>3D:</b> Estuche robusto + prueba de calor.</div>
-    </div>
-
-    <!-- 7 -->
-    <div class="card">
-        <img src="imagen7.jpg">
-        <div class="title">7. Corrector Duo Compacto</div>
-        <div class="tag">2 tonos</div>
-        <div class="text"><b>Qué es:</b> Corrector de ojeras + manchas.</div>
-        <div class="text"><b>Beneficio:</b> Mezcla tonos según necesidad.</div>
-        <div class="text"><b>3D:</b> Doble compartimento + comparación.</div>
-    </div>
-
-    <!-- 8 -->
-    <div class="card">
-        <img src="imagen8.jpg">
-        <div class="title">8. Polvo Compacto con Tonos Mexicanos</div>
-        <div class="tag">Tonos reales</div>
-        <div class="text"><b>Qué es:</b> Polvo para subtonos amarillos/olivo.</div>
-        <div class="text"><b>Beneficio:</b> Se funde con piel latina.</div>
-        <div class="text"><b>3D:</b> Rueda de tonos + aplicación 3D.</div>
-    </div>
-
-    <!-- 9 -->
-    <div class="card">
-        <img src="IMAGENES/kit_trans_public.jpg">
-        <div class="title">9. Mini Kit “Transporte Público”</div>
-        <div class="tag">Ultra portátil</div>
-        <div class="text"><b>Incluye:</b> mini polvo, bálsamo y toallita.</div>
-        <div class="text"><b>Beneficio:</b> Uso en menos de 2 minutos.</div>
-        <div class="text"><b>3D:</b> Animación de apertura + detalles.</div>
-    </div>
-
-    <!-- 10 -->
-    <div class="card">
-        <img src="IMAGENES/iluminador.jpg">
-        <div class="title">10. Compacto “Todo en Uno Profesional”</div>
-        <div class="tag">Base + polvo + luz</div>
-        <div class="text"><b>Qué es:</b> Polvo-crema híbrido para acabado pro.</div>
-        <div class="text"><b>Beneficio:</b> Rutina completa en un solo paso.</div>
-        <div class="text"><b>3D:</b> Cambio de cobertura en tiempo real.</div>
-    </div>
-
 </div>
+<!-- FIN DEL CATÁLOGO -->
 
 </body>
 </html>

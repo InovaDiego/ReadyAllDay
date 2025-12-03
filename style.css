@@ -1,73 +1,133 @@
-    body{
-        font-family: 'Poppins', sans-serif;
-        background: #f7f3fb;
-        margin:0;
-        padding:40px;
-        color:#333;
-    }
+/* ==========================
+   CONFIGURACIÓN GENERAL
+========================== */
 
-    h1{
-        text-align:center;
-        margin-bottom:40px;
-        font-size:40px;
-        color:#b48ed8;
-        font-weight:700;
-    }
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f7f3fb;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
 
-    .catalogo{
-        display:grid;
-        grid-template-columns:repeat(auto-fit, minmax(330px, 1fr));
-        gap:30px;
-        padding:20px;
-    }
+h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 34px;
+    color: #b48ed8;
+    font-weight: 700;
+}
 
-    .card{
-        background:white;
-        border-radius:25px;
-        padding:25px;
-        box-shadow:0 8px 20px rgba(0,0,0,0.08);
-        transition:transform 0.4s ease, box-shadow 0.4s ease;
-        position:relative;
-        overflow:hidden;
-    }
+/* ==========================
+   TARJETAS + GRID RESPONSIVE
+========================== */
 
-    .card:hover{
-        transform:translateY(-10px) scale(1.03);
-        box-shadow:0 14px 30px rgba(0,0,0,0.15);
-    }
+/* El grid de Bootstrap ya controla la responsividad,
+   pero aquí damos estilo personalizado */
+.catalogo {
+    padding: 10px;
+}
 
-    .card img{
-        width:100%;
-        border-radius:20px;
-        margin-bottom:15px;
-        animation:float 4s ease-in-out infinite;
-    }
+/* Tarjeta */
+.card {
+    background: white;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    overflow: hidden;
+    border: none;
+}
 
-    @keyframes float{
-        0%{ transform:translateY(0px); }
-        50%{ transform:translateY(-8px); }
-        100%{ transform:translateY(0px); }
-    }
+/* Hover */
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 14px 28px rgba(0,0,0,0.18);
+}
 
-    .title{
-        font-size:22px;
-        font-weight:600;
-        color:#8d5ec4;
-        margin-bottom:10px;
-    }
+/* Imagen */
+.card img {
+    width: 100%;
+    border-radius: 18px;
+    margin-bottom: 12px;
+    animation: float 4s ease-in-out infinite;
+    object-fit: cover;
+}
 
-    .text{
-        font-size:14px;
-        line-height:1.5;
-        margin-bottom:6px;
-    }
+/* Animación de flotación */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0); }
+}
 
-    .tag{
-        display:inline-block;
-        background:#e8d9fb;
-        color:#5f3f8f;
-        padding:4px 10px;
-        border-radius:10px;
-        font-size:12px;
-        margin-bottom:12px;
+/* Título dentro de la tarjeta */
+.title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #8d5ec4;
+    margin-bottom: 8px;
+}
+
+/* Texto descriptivo */
+.text {
+    font-size: 14px;
+    line-height: 1.45;
+    margin-bottom: 5px;
+}
+
+/* Etiquetas */
+.tag {
+    display: inline-block;
+    background: #e8d9fb;
+    color: #5f3f8f;
+    padding: 4px 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+     RESPONSIVE (MEDIA QUERIES)
+========================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+    body {
+        padding: 20px;
     }
+    h1 {
+        font-size: 30px;
+    }
+    .title {
+        font-size: 18px;
+    }
+}
+
+/* Celulares */
+@media (max-width: 576px) {
+    body {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+    .card {
+        padding: 18px;
+        border-radius: 18px;
+    }
+    .card img {
+        border-radius: 15px;
+        animation: none; /* Mejora rendimiento móvil */
+    }
+    .title {
+        font-size: 17px;
+    }
+    .text {
+        font-size: 13px;
+    }
+    .tag {
+        font-size: 11px;
+    }
+}
