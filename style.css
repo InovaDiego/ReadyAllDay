@@ -131,3 +131,131 @@ h1 {
         font-size: 11px;
     }
 }
+
+/* ==========================
+   VISUALIZACIÓN 3D
+========================== */
+
+/* 🛑 REEMPLAZO DE IMAGEN 2D POR CONTENEDOR 3D */
+/* Define el área donde se dibujará el modelo 3D (canvas de Three.js) */
+.product-3d-container {
+    width: 100%;
+    height: 350px; /* Tamaño fijo, ajusta si 350px es mucho o poco */
+    background-color: #fcfcfc; /* Fondo muy claro para el modelo */
+    border-radius: 18px;
+    margin-bottom: 12px;
+    /* Centrar el canvas dentro del contenedor si es necesario */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+/* 🛑 SOBRESCRIBIR EL ESTILO DE LA IMAGEN 2D */
+/* Eliminamos los estilos que ya no aplican a las imágenes,
+   y aplicamos el efecto 'float' al contenedor 3D */
+.card .product-3d-container {
+    /* Mantenemos la animación de flotación en el contenedor 3D */
+    animation: float 4s ease-in-out infinite; 
+}
+
+/* 🛑 ELIMINACIÓN DE ESTILOS DE IMAGENES (ESTO ES LO MÁS IMPORTANTE) */
+.card img {
+    /* La imagen ya no existe; este selector debe eliminarse
+       o modificarse si mantienes la imagen de fondo */
+    display: none; /* Oculta la imagen original */
+}
+
+/* Ajuste: Asegurar que la tarjeta tenga suficiente altura */
+.card {
+    min-height: 520px; /* Asegura que la tarjeta no se colapse al quitar la imagen */
+}
+
+/* Mantenemos esta sección por si queremos desactivar la animación flotante en móvil */
+@media (max-width: 576px) {
+    .card .product-3d-container {
+        animation: none; /* Mejora rendimiento móvil */
+    }
+}
+/* ==========================
+   NAVBAR
+========================== */
+
+.navbar {
+    width: 100%;
+    background: white;
+    padding: 15px 25px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #8d5ec4; /* tono lila para combinar */
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: #5f3f8f;
+    transition: color .3s ease, transform .3s ease;
+}
+
+.nav-links a:hover {
+    color: #b48ed8;
+    transform: translateY(-2px);
+}
+
+/* Botón hamburguesa (solo móviles) */
+.nav-toggle {
+    font-size: 26px;
+    color: #8d5ec4;
+    cursor: pointer;
+    display: none;
+}
+
+/* ==========================
+   RESPONSIVE NAVBAR
+========================== */
+
+@media (max-width: 768px){
+    .nav-links {
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: white;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        border-radius: 18px;
+        width: 160px;
+        padding: 15px 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+        display: none; /* oculto por defecto */
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}

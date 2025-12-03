@@ -4,28 +4,34 @@
 <meta charset="UTF-8">
 <title>Catálogo de Maquillaje – Clase Trabajadora</title>
 
-<!-- BOOTSTRAP -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
-
-<!-- TIPOGRAFÍA -->
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
-<!-- TU CSS -->
 <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<h1 class="text-center mb-5">Catálogo de Maquillaje Premium – Para la Clase Trabajadora</h1>
+<nav class="navbar navbar-expand-lg sticky-top bg-white p-3 shadow-sm mb-4">
+    <div class="container-fluid">
+        <div class="nav-logo me-auto">Mi Catálogo</div>
 
-<!-- INICIO DEL CATÁLOGO -->
+        <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Productos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Categorías</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+<h1 class="text-center mb-5 mt-5">Catálogo de Maquillaje Premium – Para la Clase Trabajadora</h1>
+
 <div class="container">
-    <div class="row g-4"> <!-- g-4 da espacio entre tarjetas -->
-
-        <!-- 1 -->
+    <div class="row g-4"> 
+        
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/polvo.jpg" class="img-fluid">
+                <div id="product-1-container" class="product-3d-container"></div>
                 <div class="title">1. Polvo Compacto “Trabajo Todo el Día”</div>
                 <span class="tag">Control de brillo 10–12 h</span>
                 <div class="text"><b>Qué es:</b> Polvo compacto matificante de alta duración.</div>
@@ -35,10 +41,9 @@
             </div>
         </div>
 
-        <!-- 2 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/base.jpg" class="img-fluid">
+                <div id="product-2-container" class="product-3d-container"></div>
                 <div class="title">2. Base en Barra con Protector Solar (FPS 30)</div>
                 <span class="tag">FPS 30</span>
                 <div class="text"><b>Qué es:</b> Base sólida con protector solar.</div>
@@ -47,10 +52,9 @@
             </div>
         </div>
 
-        <!-- 3 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/tintemulti.jpg" class="img-fluid">
+                <div id="product-3-container" class="product-3d-container"></div>
                 <div class="title">3. Tinte Multifuncional (Labial + Rubor + Sombras)</div>
                 <span class="tag">3 en 1</span>
                 <div class="text"><b>Qué es:</b> Producto en crema todo en uno.</div>
@@ -59,10 +63,9 @@
             </div>
         </div>
 
-        <!-- 4 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/polvocompacto.jpg" class="img-fluid">
+                <div id="product-4-container" class="product-3d-container"></div>
                 <div class="title">4. Paleta Compacta “Oficina a Día Pesado”</div>
                 <span class="tag">4 productos en 1</span>
                 <div class="text"><b>Qué es:</b> Rubor, iluminador, sombra y corrector.</div>
@@ -71,10 +74,9 @@
             </div>
         </div>
 
-        <!-- 5 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/kit_noct.jpg" class="img-fluid">
+                <div id="product-5-container" class="product-3d-container"></div>
                 <div class="title">5. Mini Kit “Turno Nocturno”</div>
                 <span class="tag">Mini tamaño</span>
                 <div class="text"><b>Incluye:</b> Polvo anti-brillo, bálsamo y mini delineador.</div>
@@ -83,10 +85,9 @@
             </div>
         </div>
 
-        <!-- 6 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/base_compacta.jpg" class="img-fluid">
+                <div id="product-6-container" class="product-3d-container"></div>
                 <div class="title">6. Base Compacta “Clima Extremo”</div>
                 <span class="tag">Resistente al calor</span>
                 <div class="text"><b>Qué es:</b> Base polvo-crema resistente al sudor.</div>
@@ -95,10 +96,9 @@
             </div>
         </div>
 
-        <!-- 7 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/corectduo.jpg" class="img-fluid">
+                <div id="product-7-container" class="product-3d-container"></div>
                 <div class="title">7. Corrector Duo Compacto</div>
                 <span class="tag">2 tonos</span>
                 <div class="text"><b>Qué es:</b> Corrector de ojeras + manchas.</div>
@@ -107,10 +107,9 @@
             </div>
         </div>
 
-        <!-- 8 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/polvosmex.jpg" class="img-fluid">
+                <div id="product-8-container" class="product-3d-container"></div>
                 <div class="title">8. Polvo Compacto con Tonos Mexicanos</div>
                 <span class="tag">Tonos reales</span>
                 <div class="text"><b>Qué es:</b> Polvo para subtonos amarillos/olivo.</div>
@@ -119,10 +118,9 @@
             </div>
         </div>
 
-        <!-- 9 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/kit_trans_public.jpg" class="img-fluid">
+                <div id="product-9-container" class="product-3d-container"></div>
                 <div class="title">9. Mini Kit “Transporte Público”</div>
                 <span class="tag">Ultra portátil</span>
                 <div class="text"><b>Incluye:</b> mini polvo, bálsamo y toallita.</div>
@@ -131,10 +129,9 @@
             </div>
         </div>
 
-        <!-- 10 -->
         <div class="col-12 col-sm-6 col-lg-4">
             <div class="card">
-                <img src="IMAGENES/iluminador.jpg" class="img-fluid">
+                <div id="product-10-container" class="product-3d-container"></div>
                 <div class="title">10. Compacto “Todo en Uno Profesional”</div>
                 <span class="tag">Base + polvo + luz</span>
                 <div class="text"><b>Qué es:</b> Polvo-crema híbrido para acabado pro.</div>
@@ -145,7 +142,14 @@
 
     </div>
 </div>
-<!-- FIN DEL CATÁLOGO -->
+<script src="https://unpkg.com/three@0.137.0/build/three.min.js"></script>
+<script src="https://unpkg.com/three@0.137.0/examples/js/controls/OrbitControls.js"></script>
+<script src="https://unpkg.com/three@0.137.0/examples/js/loaders/GLTFLoader.js"></script>
+
+
+
+
+<script src="catalogo.js"></script>
 
 </body>
 </html>
